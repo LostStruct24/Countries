@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './countries.css';
+import { Link } from 'react-router-dom';
 
 const url = 'https://restcountries.eu/rest/v2/all'
 
@@ -10,18 +11,22 @@ const Countries = () => {
         const response = await fetch(url)
         const countries = await response.json()
         setCountries(countries)
-        console.log(countries)
     }
 
     useEffect(() => {
         fetchCountryData()
     }, []);
 
+    const removeCountry = (numericCode) => {
+        const newCountry = countries.filter((country) => country.numericCode !== numericCode)
+        setCountries(newCountry)
+    }
+
     return (
         <>
             <section className='grid'>
                 {countries.map((country) => {
-                    const { numericCode, name, population, region, capital, flag, nativeName } = country
+                    const { numericCode, name, region, capital, flag, nativeName } = country;
 
                     return (
                         <article idkey={numericCode}>
@@ -29,10 +34,13 @@ const Countries = () => {
                                 <div className='details'>
                                     <img src={flag} alt={name} className='img' />
                                     <h3>{name}</h3>
-                                    <h4>Region: <span>{region}</span></h4>
-                                    <h4>Capital: <span>{capital}</span></h4>
-                                    <h4>Population: <span>{population}</span></h4>
                                     <h4>Native Name: <span>{nativeName}</span></h4>
+                                    <h4>Capital: <span>{capital}</span></h4>
+                                    <h4>Region: <span>{region}</span></h4>
+                                    <div className='button'>
+                                        <Link to={`/Countries/countries/${name}`} className='btn'>More</Link>
+                                        <button className='btn' onClick={() => removeCountry(numericCode)}>Remove Country</button>
+                                    </div>
                                 </div>
                             </div>
                         </article>
