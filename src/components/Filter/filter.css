@@ -26,18 +26,6 @@
     color: rgb(216, 216, 216);
 }
 
-.filter .region-filter {
-    width: 100%;
-}
-
-.filter .region-filter .select {
-    background-color: rgb(26, 32, 41);
-    color: rgb(216, 216, 216);
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 200px;  
-}
 
 @media (min-width: 768px) {
     .filter {

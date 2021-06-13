@@ -1,16 +1,13 @@
 import React from 'react';
 import './header.css';
-import { BiMoon } from 'react-icons/bi';
+import { ImEarth } from 'react-icons/im';
 
 const Header = () => {
     return (
         <div>
             <header className="header">
                 <div>
-                    <h1>Countries</h1>  
-                </div>
-                <div>
-                    <i className='bimoon'></i>Dark Mode <BiMoon /> 
+                    <h1><ImEarth /> Countries  </h1>  
                 </div>
             </header>
         </div>
