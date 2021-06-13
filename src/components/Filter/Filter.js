@@ -2,12 +2,11 @@ import React from 'react';
 import './filter.css';
 
 const Filter = () => {
-
-    window.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener ('DOMContentLoaded', () => {
         const search = document.getElementById('search');
 
         search.addEventListener('input', (e) => {
-            const { value } = e.target
+            const value = e.target.value;
     
             const countryName = document.querySelectorAll('.country-name')
     
