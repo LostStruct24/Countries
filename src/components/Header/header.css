@@ -1,8 +1,9 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 10px 20px;
+}
+
+.earth {
+    font-size: 20px;
 }
 
 @media (min-width: 992px) {
@@ -10,3 +11,4 @@
         padding: 20px 50px;
     }
 }
+

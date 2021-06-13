@@ -6,7 +6,7 @@ import './country.css';
 const Country = () => {
     const [country, setCountry] = useState([]);
 
-    const {name} = useParams();
+    const { name } = useParams();
 
     useEffect(() => {
         const fetchCountryData = async () => {
@@ -16,8 +16,8 @@ const Country = () => {
             const country = await response.json()
             setCountry(country)
         }    
-        fetchCountryData()
-    }, []);
+        fetchCountryData();
+    }, [name]);
 
     return (
         <>

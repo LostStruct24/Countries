@@ -7,7 +7,7 @@ const Header = () => {
         <div>
             <header className="header">
                 <div>
-                    <h1><ImEarth /> Countries  </h1>  
+                    <h1><i className='earth'><ImEarth /></i> Countries  </h1>  
                 </div>
             </header>
         </div>

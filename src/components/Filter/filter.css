@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     padding: 20px;
 }
@@ -26,6 +27,17 @@
     color: rgb(216, 216, 216);
 }
 
+.filter .region-filter {
+    width: 100%;
+}
+
+.filter .region-filter .select {
+    background-color: rgb(26, 32, 41);
+    color: rgb(216, 216, 216);
+    padding: 8px;
+    width: 200px;
+    border: none;
+}
 
 @media (min-width: 768px) {
     .filter {
