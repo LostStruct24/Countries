@@ -12,6 +12,10 @@ body {
     color: rgb(216, 216, 216);
 }
 
+body.lightTheme {
+    background-color: rgb(191, 201, 214);
+    color: rgb(216, 216, 216);
+}
 
 
 

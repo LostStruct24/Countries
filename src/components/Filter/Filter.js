@@ -36,7 +36,6 @@ const Filter = () => {
                         <option value='Oceania'>Oceania</option>
                     </select>
                 </div>
-
             </section>
     );
 };

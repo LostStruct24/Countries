@@ -82,3 +82,19 @@
     }
 }
 
+
+.details.lightTheme {
+    color: rgb(191, 201, 214);
+    box-shadow: 0 10px 10px rgba(13, 13, 19, 0.5);
+    background-color: rgb(26, 32, 41);
+}
+
+.btn.lightTheme {
+    background-color: rgb(151, 151, 151);
+    color: rgb(26, 32, 41);
+}
+
+.btn:hover.lightTheme {
+    background-color: rgb(26, 32, 41);
+    color:  rgb(216, 216, 216);
+}
